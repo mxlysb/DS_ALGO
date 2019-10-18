@@ -1,11 +1,9 @@
-'''
-Fractional Knapsack
+'''Fractional Knapsack
 
 Greedy Approach
 
-Complexity:- O(nlog(n))
+Complexity:- O(nlog(n))'''
 
-'''
 def knapsack(n,p,w,m):
     val=[p[i]/w[i] for i in range(n)]
     p=[x for _,x in sorted(zip(val,p),reverse=True)]
